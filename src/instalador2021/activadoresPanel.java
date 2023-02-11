@@ -24,9 +24,9 @@ public class activadoresPanel extends javax.swing.JInternalFrame {
      */
     public activadoresPanel() {
         initComponents();
-        BasicInternalFrameUI bi = (BasicInternalFrameUI)this.getUI();
+        BasicInternalFrameUI bi = (BasicInternalFrameUI) this.getUI();
         bi.setNorthPane(null);
-        
+
     }
 
     /**
@@ -190,35 +190,30 @@ public class activadoresPanel extends javax.swing.JInternalFrame {
     private void InstalarOfficeBottonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InstalarOfficeBottonActionPerformed
         JOptionPane.showMessageDialog(null, new JLabel("DESACTIVA EL ANTIVIRUS PRIMERO", JLabel.LEFT), "ALERTA", JOptionPane.WARNING_MESSAGE);
         Instalador activador = new Instalador();
-        
+
         Procesos Buscador = new Procesos();
         try {
             String dato = Buscador.consoleInfo("Nombre del sistema operativo:", "systeminfo");
-            if(dato.contains("Microsoft Windows 1")){
-                
-            int result = JOptionPane.showConfirmDialog(null,"¿Desea abrir configuración de Windows Defender?", "",
-               JOptionPane.YES_NO_OPTION,
-               JOptionPane.QUESTION_MESSAGE);
-            if(result == JOptionPane.YES_OPTION){
-            activador.instalar("explorer.exe windowsdefender:");
-            }    
-                
-            
+            if (dato.contains("Microsoft Windows 1")) {
+
+                int result = JOptionPane.showConfirmDialog(null, "¿Desea abrir configuración de Windows Defender?", "",
+                        JOptionPane.YES_NO_OPTION,
+                        JOptionPane.QUESTION_MESSAGE);
+                if (result == JOptionPane.YES_OPTION) {
+                    activador.instalar("explorer.exe windowsdefender:");
+                }
+
             }
         } catch (IOException ex) {
             Logger.getLogger(activadoresPanel.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
-        
-        
-        
+
         DescomprimirZip Extractor = new DescomprimirZip();
         if (actWin7.isSelected()) {
             try {
                 Extractor.Descomprimir("Activadores/RemoveWAT.zip");
             } catch (IOException ex) {
-                JOptionPane.showMessageDialog(null, "Error al descomprimir" + ex,"ERROR", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Error al descomprimir" + ex, "ERROR", JOptionPane.WARNING_MESSAGE);
                 Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
             }
             activador.instalar("cmd /C start /wait Activadores/RemoveWAT.exe");
@@ -227,7 +222,7 @@ public class activadoresPanel extends javax.swing.JInternalFrame {
             try {
                 Extractor.Descomprimir("Activadores/Office10.zip");
             } catch (IOException ex) {
-                JOptionPane.showMessageDialog(null, "Error al descomprimir" + ex,"ERROR", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Error al descomprimir" + ex, "ERROR", JOptionPane.WARNING_MESSAGE);
                 Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
             }
             activador.instalar("cmd /C start /wait Activadores/Office10.exe");
@@ -236,7 +231,7 @@ public class activadoresPanel extends javax.swing.JInternalFrame {
             try {
                 Extractor.Descomprimir("Activadores/Office16.zip");
             } catch (IOException ex) {
-                JOptionPane.showMessageDialog(null, "Error al descomprimir" + ex,"ERROR", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Error al descomprimir" + ex, "ERROR", JOptionPane.WARNING_MESSAGE);
                 Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
             }
             activador.instalar("cmd /C start /wait Activadores/Office16.exe");
@@ -245,7 +240,7 @@ public class activadoresPanel extends javax.swing.JInternalFrame {
             try {
                 Extractor.Descomprimir("Activadores/KMSpico.zip");
             } catch (IOException ex) {
-                JOptionPane.showMessageDialog(null, "Error al descomprimir" + ex,"ERROR", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Error al descomprimir" + ex, "ERROR", JOptionPane.WARNING_MESSAGE);
                 Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
             }
             activador.instalar("cmd /C start /wait Activadores/KMSpico.exe");
@@ -255,19 +250,17 @@ public class activadoresPanel extends javax.swing.JInternalFrame {
             try {
                 Extractor.Descomprimir("Activadores/win7B.zip");
             } catch (IOException ex) {
-                JOptionPane.showMessageDialog(null, "Error al descomprimir" + ex,"ERROR", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Error al descomprimir" + ex, "ERROR", JOptionPane.WARNING_MESSAGE);
                 Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
             }
             activador.instalar("cmd /C start /wait Activadores/WindowsLoader.exe");
         }
 
-                        
-                    
 
     }//GEN-LAST:event_InstalarOfficeBottonActionPerformed
 
     private void actWin7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actWin7ActionPerformed
-       InstalarOfficeBotton.setEnabled(true);
+        InstalarOfficeBotton.setEnabled(true);
     }//GEN-LAST:event_actWin7ActionPerformed
 
     private void actWin10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actWin10ActionPerformed

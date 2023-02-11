@@ -11,22 +11,23 @@ import java.util.logging.Logger;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.plaf.basic.BasicInternalFrameUI;
- 
+
 /**
  *
  * @author Alejandro
  */
 public class herramientasPanel extends javax.swing.JInternalFrame {
-     Instalador herramientas = new Instalador();
+
+    Instalador herramientas = new Instalador();
+
     /**
      * Creates new form officePanel
      */
     public herramientasPanel() {
         initComponents();
-        BasicInternalFrameUI bi = (BasicInternalFrameUI)this.getUI();
+        BasicInternalFrameUI bi = (BasicInternalFrameUI) this.getUI();
         bi.setNorthPane(null);
-         
-        
+
     }
 
     /**
@@ -162,44 +163,42 @@ public class herramientasPanel extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
+
     private void crystalDiskInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crystalDiskInfoActionPerformed
         if (this.isSelected()) {
             herramientas.instalar("cmd /C start Extras/CrystalDiskInfo/DiskInfo32.exe");
-        }        
+        }
     }//GEN-LAST:event_crystalDiskInfoActionPerformed
 
     private void controlCuentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_controlCuentasActionPerformed
-         if (this.isSelected()) {
+        if (this.isSelected()) {
             herramientas.instalar("cmd /C start UserAccountControlSettings.exe");
         }
     }//GEN-LAST:event_controlCuentasActionPerformed
 
     private void estadoBateriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estadoBateriaActionPerformed
-        if (this.isSelected){
-        Procesos Buscador = new Procesos();
-        String datoSistemaOperativo;
+        if (this.isSelected) {
+            Procesos Buscador = new Procesos();
+            String datoSistemaOperativo;
             try {
                 datoSistemaOperativo = Buscador.consoleInfo("Nombre del sistema operativo:", "systeminfo");
                 if (datoSistemaOperativo.contains("Microsoft Windows 1")) {
-                try {
+                    try {
 
-                    Buscador.consoleInformation("Se ha guardado el informe", "powercfg /batteryreport");
-                    JOptionPane.showMessageDialog(null, new JLabel("Se generó el reporte de la bateria", JLabel.CENTER), null, JOptionPane.PLAIN_MESSAGE);
-                    herramientas.instalar("cmd /C start battery-report.html");
+                        Buscador.consoleInformation("Se ha guardado el informe", "powercfg /batteryreport");
+                        JOptionPane.showMessageDialog(null, new JLabel("Se generó el reporte de la bateria", JLabel.CENTER), null, JOptionPane.PLAIN_MESSAGE);
+                        herramientas.instalar("cmd /C start battery-report.html");
 
-                } catch (IOException ex) {
-                    Logger.getLogger(herramientasPanel.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
-                else {
-                JOptionPane.showMessageDialog(null, new JLabel("Esta característica no está disponible para su sistema operativo "+datoSistemaOperativo, JLabel.LEFT), null, JOptionPane.PLAIN_MESSAGE);
+                    } catch (IOException ex) {
+                        Logger.getLogger(herramientasPanel.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, new JLabel("Esta característica no está disponible para su sistema operativo " + datoSistemaOperativo, JLabel.LEFT), null, JOptionPane.PLAIN_MESSAGE);
                 }
             } catch (IOException ex) {
                 Logger.getLogger(herramientasPanel.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
-        
+
         }
     }//GEN-LAST:event_estadoBateriaActionPerformed
 

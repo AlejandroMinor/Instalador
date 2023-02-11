@@ -5,15 +5,12 @@
  */
 package instalador2021;
 
-import java.awt.Color;
-import java.awt.Container;
 import java.awt.Cursor;
 import static java.awt.Cursor.DEFAULT_CURSOR;
 import static java.awt.Frame.HAND_CURSOR;
 import java.awt.Menu;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.plaf.basic.BasicInternalFrameUI;
@@ -22,20 +19,20 @@ import javax.swing.plaf.basic.BasicInternalFrameUI;
  *
  * @author Alejandro
  */
-public class x64Panel extends javax.swing.JInternalFrame{
+public class x64Panel extends javax.swing.JInternalFrame {
 //principal aux = new principal();//objeto para pasar metodos
+
     cambioColor aux = new cambioColor();
 
     /**
      * Creates new form x64Panel
      */
-
     public x64Panel() {
         initComponents();
-        
-        BasicInternalFrameUI bi = (BasicInternalFrameUI)this.getUI();
+
+        BasicInternalFrameUI bi = (BasicInternalFrameUI) this.getUI();
         bi.setNorthPane(null);
-          
+
     }
 
     /**
@@ -276,7 +273,7 @@ public class x64Panel extends javax.swing.JInternalFrame{
     }// </editor-fold>//GEN-END:initComponents
 
     private void chromex64CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chromex64CheckBoxActionPerformed
-          if (chromex64CheckBox.isSelected()) {  
+        if (chromex64CheckBox.isSelected()) {
             aux.RegresarColorIcono(chromex64Ico);
         } else {
             aux.cambiarColorIcono(chromex64Ico);
@@ -284,7 +281,7 @@ public class x64Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_chromex64CheckBoxActionPerformed
 
     private void VLCx64CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VLCx64CheckBoxActionPerformed
-          if (VLCx64CheckBox.isSelected()) {  
+        if (VLCx64CheckBox.isSelected()) {
             aux.RegresarColorIcono(VLCx64Ico);
         } else {
             aux.cambiarColorIcono(VLCx64Ico);
@@ -292,7 +289,7 @@ public class x64Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_VLCx64CheckBoxActionPerformed
 
     private void winrarx64CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_winrarx64CheckBoxActionPerformed
-          if (winrarx64CheckBox.isSelected()) {  
+        if (winrarx64CheckBox.isSelected()) {
             aux.RegresarColorIcono(winrarx64Ico);
         } else {
             aux.cambiarColorIcono(winrarx64Ico);
@@ -300,7 +297,7 @@ public class x64Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_winrarx64CheckBoxActionPerformed
 
     private void codecsCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_codecsCheckBoxActionPerformed
-          if (codecsCheckBox.isSelected()) {  
+        if (codecsCheckBox.isSelected()) {
             aux.RegresarColorIcono(codecsIco);
         } else {
             aux.cambiarColorIcono(codecsIco);
@@ -308,7 +305,7 @@ public class x64Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_codecsCheckBoxActionPerformed
 
     private void adobeCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adobeCheckBoxActionPerformed
-          if (adobeCheckBox.isSelected()) {  
+        if (adobeCheckBox.isSelected()) {
             aux.RegresarColorIcono(adobeIco);
         } else {
             aux.cambiarColorIcono(adobeIco);
@@ -316,7 +313,7 @@ public class x64Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_adobeCheckBoxActionPerformed
 
     private void fireFoxx64CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fireFoxx64CheckBoxActionPerformed
-          if (fireFoxx64CheckBox.isSelected()) {  
+        if (fireFoxx64CheckBox.isSelected()) {
             aux.RegresarColorIcono(fireFoxx64Ico);
         } else {
             aux.cambiarColorIcono(fireFoxx64Ico);
@@ -324,7 +321,7 @@ public class x64Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_fireFoxx64CheckBoxActionPerformed
 
     private void avastCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_avastCheckBoxActionPerformed
-          if (avastCheckBox.isSelected()) {  
+        if (avastCheckBox.isSelected()) {
             aux.RegresarColorIcono(avastIco);
         } else {
             aux.cambiarColorIcono(avastIco);
@@ -332,7 +329,7 @@ public class x64Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_avastCheckBoxActionPerformed
 
     private void visorFotosCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visorFotosCheckBoxActionPerformed
-          if (visorFotosCheckBox.isSelected()) {  
+        if (visorFotosCheckBox.isSelected()) {
             aux.RegresarColorIcono(visorFotosIco);
         } else {
             aux.cambiarColorIcono(visorFotosIco);
@@ -340,7 +337,7 @@ public class x64Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_visorFotosCheckBoxActionPerformed
 
     private void nitrox64CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nitrox64CheckBoxActionPerformed
-          if (nitrox64CheckBox.isSelected()) {  
+        if (nitrox64CheckBox.isSelected()) {
             aux.RegresarColorIcono(nitrox64Ico);
         } else {
             aux.cambiarColorIcono(nitrox64Ico);
@@ -371,9 +368,7 @@ public class x64Panel extends javax.swing.JInternalFrame{
             aux.RegresarColorIcono(nitrox64Ico);
             aux.RegresarColorIcono(fireFoxx64Ico);
 
-            
-            } 
-        else {
+        } else {
             allChecksCheckBox.setText("Seleccionar todo");
             chromex64CheckBox.setSelected(false);
             VLCx64CheckBox.setSelected(false);
@@ -394,10 +389,9 @@ public class x64Panel extends javax.swing.JInternalFrame{
             aux.cambiarColorIcono(visorFotosIco);
             aux.cambiarColorIcono(nitrox64Ico);
             aux.cambiarColorIcono(fireFoxx64Ico);
-    
+
         }
-    
-    
+
 
     }//GEN-LAST:event_allChecksCheckBoxActionPerformed
 
@@ -411,19 +405,17 @@ public class x64Panel extends javax.swing.JInternalFrame{
 
     private void Instalarx64BottonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Instalarx64BottonActionPerformed
         activarDesactivarChecks(false);
-        HiloX64 Instalacionx64 = new HiloX64(); 
+        HiloX64 Instalacionx64 = new HiloX64();
         Instalacionx64.start();
         Instalarx64Botton.setVisible(false);
         detenerInstalacionx64Botton.setVisible(true);
-       
-        
-        
-       
+
+
     }//GEN-LAST:event_Instalarx64BottonActionPerformed
 
     private void detenerInstalacionx64BottonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_detenerInstalacionx64BottonMouseClicked
 
-        
+
     }//GEN-LAST:event_detenerInstalacionx64BottonMouseClicked
 
     private void detenerInstalacionx64BottonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_detenerInstalacionx64BottonMouseEntered
@@ -431,21 +423,19 @@ public class x64Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_detenerInstalacionx64BottonMouseEntered
 
     private void detenerInstalacionx64BottonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detenerInstalacionx64BottonActionPerformed
-        boolean confirmar=true;
-                
-        cerrarPrograma(confirmar);
-        
+        boolean confirmar = true;
 
-        
+        cerrarPrograma(confirmar);
+
 
     }//GEN-LAST:event_detenerInstalacionx64BottonActionPerformed
 
     private void Instalarx64BottonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Instalarx64BottonMouseExited
-         Instalarx64Botton.setCursor(new Cursor(DEFAULT_CURSOR));
+        Instalarx64Botton.setCursor(new Cursor(DEFAULT_CURSOR));
     }//GEN-LAST:event_Instalarx64BottonMouseExited
-    
- // HiloX64 Instalacionx64 = new HiloX64(); 
-  class HiloX64 extends Thread {
+
+    // HiloX64 Instalacionx64 = new HiloX64(); 
+    class HiloX64 extends Thread {
 
         @Override
         public void run() {
@@ -509,7 +499,7 @@ public class x64Panel extends javax.swing.JInternalFrame{
                             Thread.sleep(3 * tiempo);
                             Software.instalarTiempo("cmd /C start /wait Activadores/WinrarCrackX64.exe /S", 3);
                             continuar = false;
-                            
+
                         }
                     } catch (Exception ex) {
                         Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
@@ -631,8 +621,6 @@ public class x64Panel extends javax.swing.JInternalFrame{
 
             }
 
-            
-
             do {
 
                 try {
@@ -640,28 +628,24 @@ public class x64Panel extends javax.swing.JInternalFrame{
                     continuar = true;
                     if (Buscador.isProcessRunning("5.-WinrarX64.exe") || Buscador.isProcessRunning("3.-VLC32.exe") || Buscador.isProcessRunning("2.-Chrome64.exe") || Buscador.isProcessRunning("4.-Codec_Pack.exe") || Buscador.isProcessRunning("6.-Adobe.exe") || Buscador.isProcessRunning("7.-Avast.exe") || Buscador.isProcessRunning("Restore_Windows_Photo_Viewer.reg") || Buscador.isProcessRunning("9.-Nitrox64.exe") || Buscador.isProcessRunning("8.-FireFoxX64.exe")) {
                     } else {
-                        
-                        JOptionPane.showMessageDialog(null,new JLabel("INSTALACIÓN TERMINADA", JLabel.CENTER), null, JOptionPane.PLAIN_MESSAGE);
+
+                        JOptionPane.showMessageDialog(null, new JLabel("INSTALACIÓN TERMINADA", JLabel.CENTER), null, JOptionPane.PLAIN_MESSAGE);
                         activarDesactivarChecks(true);
                         continuar = false;
-                        
 
-                        
                     }
                 } catch (Exception ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
             } while (continuar);
-                        detenerInstalacionx64Botton.setVisible(false);
-                        Instalarx64Botton.setVisible(true);
-                       
+            detenerInstalacionx64Botton.setVisible(false);
+            Instalarx64Botton.setVisible(true);
 
-            
         }
 
     }
-  
-  public void activarDesactivarChecks(boolean respuesta){
+
+    public void activarDesactivarChecks(boolean respuesta) {
         chromex64CheckBox.setEnabled(respuesta);
         VLCx64CheckBox.setEnabled(respuesta);
         winrarx64CheckBox.setEnabled(respuesta);
@@ -672,22 +656,23 @@ public class x64Panel extends javax.swing.JInternalFrame{
         nitrox64CheckBox.setEnabled(respuesta);
         fireFoxx64CheckBox.setEnabled(respuesta);
         allChecksCheckBox.setEnabled(respuesta);
-        
-  }
 
-     public boolean cerrarPrograma(boolean resultado){
-int result = JOptionPane.showConfirmDialog(null,"Esta acción cerrara el programa ¿Desea continuar? ", "",
-               JOptionPane.YES_NO_OPTION,
-               JOptionPane.QUESTION_MESSAGE);
-            if(result == JOptionPane.YES_OPTION){
+    }
+
+    public boolean cerrarPrograma(boolean resultado) {
+        int result = JOptionPane.showConfirmDialog(null, "Esta acción cerrara el programa ¿Desea continuar? ", "",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE);
+        if (result == JOptionPane.YES_OPTION) {
             System.exit(0);
-            resultado=true;
-            }
-            else resultado=false;
+            resultado = true;
+        } else {
+            resultado = false;
+        }
         return resultado;
 
     }
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Instalarx64Botton;
     private javax.swing.JCheckBox VLCx64CheckBox;
@@ -714,13 +699,3 @@ int result = JOptionPane.showConfirmDialog(null,"Esta acción cerrara el program
     private javax.swing.JLabel winrarx64Ico;
     // End of variables declaration//GEN-END:variables
 }
-
-
-
-
-
-
-
-
-
-

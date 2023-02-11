@@ -23,9 +23,9 @@ public class officePanel extends javax.swing.JInternalFrame {
      */
     public officePanel() {
         initComponents();
-        BasicInternalFrameUI bi = (BasicInternalFrameUI)this.getUI();
+        BasicInternalFrameUI bi = (BasicInternalFrameUI) this.getUI();
         bi.setNorthPane(null);
-        
+
     }
 
     /**
@@ -228,18 +228,17 @@ public class officePanel extends javax.swing.JInternalFrame {
                 instalarOffice.instalar("cmd /C start /wait Office/Office-2019/OInstall.exe");
 
             } catch (IOException ex) {
-                JOptionPane.showMessageDialog(null, "Error al descomprimir" + ex,"ERROR", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Error al descomprimir" + ex, "ERROR", JOptionPane.WARNING_MESSAGE);
                 Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
             }
 
         }
-                        
-                    
+
 
     }//GEN-LAST:event_InstalarOfficeBottonActionPerformed
 
     private void office7x86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_office7x86ActionPerformed
-       InstalarOfficeBotton.setEnabled(true);
+        InstalarOfficeBotton.setEnabled(true);
     }//GEN-LAST:event_office7x86ActionPerformed
 
     private void office10x86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_office10x86ActionPerformed
