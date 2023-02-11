@@ -126,7 +126,6 @@
           <Border info="null"/>
         </Property>
         <Property name="focusPainted" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actWin10ActionPerformed"/>
@@ -156,7 +155,6 @@
           <Border info="null"/>
         </Property>
         <Property name="focusPainted" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actOffice10ActionPerformed"/>
@@ -186,7 +184,6 @@
           <Border info="null"/>
         </Property>
         <Property name="focusPainted" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actOffice16ActionPerformed"/>
@@ -216,7 +213,6 @@
           <Border info="null"/>
         </Property>
         <Property name="focusPainted" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actKSMActionPerformed"/>
@@ -246,7 +242,6 @@
           <Border info="null"/>
         </Property>
         <Property name="focusPainted" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actWin7BActionPerformed"/>

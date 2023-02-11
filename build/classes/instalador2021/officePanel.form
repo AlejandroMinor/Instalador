@@ -162,7 +162,6 @@
           <Border info="null"/>
         </Property>
         <Property name="focusPainted" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="office10x86ActionPerformed"/>
@@ -192,7 +191,6 @@
           <Border info="null"/>
         </Property>
         <Property name="focusPainted" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="office10x64ActionPerformed"/>
@@ -222,7 +220,6 @@
           <Border info="null"/>
         </Property>
         <Property name="focusPainted" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="office13x64ActionPerformed"/>
@@ -252,7 +249,6 @@
           <Border info="null"/>
         </Property>
         <Property name="focusPainted" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="office16x64ActionPerformed"/>
@@ -282,7 +278,6 @@
           <Border info="null"/>
         </Property>
         <Property name="focusPainted" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="office19x64ActionPerformed"/>

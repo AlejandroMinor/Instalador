@@ -16,19 +16,19 @@ import javax.swing.plaf.basic.BasicInternalFrameUI;
  *
  * @author Alejandro
  */
-public class x32Panel extends javax.swing.JInternalFrame{
+public class x32Panel extends javax.swing.JInternalFrame {
 //principal aux = new principal();//objeto para pasar metodos
+
     cambioColor aux = new cambioColor();
 
     /**
      * Creates new form x64Panel
      */
-
     public x32Panel() {
         initComponents();
-        BasicInternalFrameUI bi = (BasicInternalFrameUI)this.getUI();
+        BasicInternalFrameUI bi = (BasicInternalFrameUI) this.getUI();
         bi.setNorthPane(null);
-          
+
     }
 
     /**
@@ -266,7 +266,7 @@ public class x32Panel extends javax.swing.JInternalFrame{
     }// </editor-fold>//GEN-END:initComponents
 
     private void chromex32CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chromex32CheckBoxActionPerformed
-          if (chromex32CheckBox.isSelected()) {  
+        if (chromex32CheckBox.isSelected()) {
             aux.RegresarColorIcono(chromex32Ico);
         } else {
             aux.cambiarColorIcono(chromex32Ico);
@@ -274,7 +274,7 @@ public class x32Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_chromex32CheckBoxActionPerformed
 
     private void VLCx32CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VLCx32CheckBoxActionPerformed
-          if (VLCx32CheckBox.isSelected()) {  
+        if (VLCx32CheckBox.isSelected()) {
             aux.RegresarColorIcono(VLCx32Ico);
         } else {
             aux.cambiarColorIcono(VLCx32Ico);
@@ -282,7 +282,7 @@ public class x32Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_VLCx32CheckBoxActionPerformed
 
     private void winrarx32CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_winrarx32CheckBoxActionPerformed
-          if (winrarx32CheckBox.isSelected()) {  
+        if (winrarx32CheckBox.isSelected()) {
             aux.RegresarColorIcono(winrarx32Ico);
         } else {
             aux.cambiarColorIcono(winrarx32Ico);
@@ -290,7 +290,7 @@ public class x32Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_winrarx32CheckBoxActionPerformed
 
     private void codecsCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_codecsCheckBoxActionPerformed
-          if (codecsCheckBox.isSelected()) {  
+        if (codecsCheckBox.isSelected()) {
             aux.RegresarColorIcono(codecsIco);
         } else {
             aux.cambiarColorIcono(codecsIco);
@@ -298,7 +298,7 @@ public class x32Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_codecsCheckBoxActionPerformed
 
     private void adobeCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adobeCheckBoxActionPerformed
-          if (adobeCheckBox.isSelected()) {  
+        if (adobeCheckBox.isSelected()) {
             aux.RegresarColorIcono(adobeIco);
         } else {
             aux.cambiarColorIcono(adobeIco);
@@ -306,7 +306,7 @@ public class x32Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_adobeCheckBoxActionPerformed
 
     private void fireFoxx32CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fireFoxx32CheckBoxActionPerformed
-          if (fireFoxx32CheckBox.isSelected()) {  
+        if (fireFoxx32CheckBox.isSelected()) {
             aux.RegresarColorIcono(fireFoxx32Ico);
         } else {
             aux.cambiarColorIcono(fireFoxx32Ico);
@@ -314,7 +314,7 @@ public class x32Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_fireFoxx32CheckBoxActionPerformed
 
     private void avastCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_avastCheckBoxActionPerformed
-          if (avastCheckBox.isSelected()) {  
+        if (avastCheckBox.isSelected()) {
             aux.RegresarColorIcono(avastIco);
         } else {
             aux.cambiarColorIcono(avastIco);
@@ -322,7 +322,7 @@ public class x32Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_avastCheckBoxActionPerformed
 
     private void visorFotosCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visorFotosCheckBoxActionPerformed
-          if (visorFotosCheckBox.isSelected()) {  
+        if (visorFotosCheckBox.isSelected()) {
             aux.RegresarColorIcono(visorFotosIco);
         } else {
             aux.cambiarColorIcono(visorFotosIco);
@@ -330,7 +330,7 @@ public class x32Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_visorFotosCheckBoxActionPerformed
 
     private void nitrox32CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nitrox32CheckBoxActionPerformed
-          if (nitrox32CheckBox.isSelected()) {  
+        if (nitrox32CheckBox.isSelected()) {
             aux.RegresarColorIcono(nitrox32Ico);
         } else {
             aux.cambiarColorIcono(nitrox32Ico);
@@ -361,9 +361,7 @@ public class x32Panel extends javax.swing.JInternalFrame{
             aux.RegresarColorIcono(nitrox32Ico);
             aux.RegresarColorIcono(fireFoxx32Ico);
 
-            
-            } 
-        else {
+        } else {
             allChecksCheckBox.setText("Seleccionar todo");
             chromex32CheckBox.setSelected(false);
             VLCx32CheckBox.setSelected(false);
@@ -384,10 +382,9 @@ public class x32Panel extends javax.swing.JInternalFrame{
             aux.cambiarColorIcono(visorFotosIco);
             aux.cambiarColorIcono(nitrox32Ico);
             aux.cambiarColorIcono(fireFoxx32Ico);
-    
+
         }
-    
-    
+
 
     }//GEN-LAST:event_allChecksCheckBoxActionPerformed
 
@@ -401,18 +398,17 @@ public class x32Panel extends javax.swing.JInternalFrame{
 
     private void Instalarx32BottonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Instalarx32BottonActionPerformed
         activarDesactivarChecks(false);
-        HiloX32 Instalacionx64 = new HiloX32(); 
+        HiloX32 Instalacionx64 = new HiloX32();
         Instalacionx64.start();
         Instalarx32Botton.setVisible(false);
         detenerInstalacionx64Botton.setVisible(true);
-        
-        
-       
+
+
     }//GEN-LAST:event_Instalarx32BottonActionPerformed
 
     private void detenerInstalacionx64BottonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_detenerInstalacionx64BottonMouseClicked
 
-        
+
     }//GEN-LAST:event_detenerInstalacionx64BottonMouseClicked
 
     private void detenerInstalacionx64BottonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_detenerInstalacionx64BottonMouseEntered
@@ -420,17 +416,14 @@ public class x32Panel extends javax.swing.JInternalFrame{
     }//GEN-LAST:event_detenerInstalacionx64BottonMouseEntered
 
     private void detenerInstalacionx64BottonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detenerInstalacionx64BottonActionPerformed
-        boolean confirmar=true;
-                
-        cerrarPrograma(confirmar);
-        
+        boolean confirmar = true;
 
-        
+        cerrarPrograma(confirmar);
+
 
     }//GEN-LAST:event_detenerInstalacionx64BottonActionPerformed
-    
-  
-  class HiloX32 extends Thread {
+
+    class HiloX32 extends Thread {
 
         @Override
         public void run() {
@@ -453,11 +446,11 @@ public class x32Panel extends javax.swing.JInternalFrame{
                             Software.instalarTiempo("cmd /C start /wait 32/2.-Chrome32.exe", 1);
                             Thread.sleep(3 * tiempo);
                             continuar = false;
-                            
+
                         }
                     } catch (Exception ex) {
                         Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-                        
+
                     }
                 } while (continuar);
 
@@ -476,7 +469,6 @@ public class x32Panel extends javax.swing.JInternalFrame{
                             Software.instalarTiempo("cmd /C start /wait 32/3.-VLC32.exe /S", 1);
                             Thread.sleep(3 * tiempo);
                             continuar = false;
-                             
 
                         }
 
@@ -498,7 +490,7 @@ public class x32Panel extends javax.swing.JInternalFrame{
                             Thread.sleep(3 * tiempo);
                             Software.instalarTiempo("cmd /C start /wait Activadores/WinrarCrackX32.exe /S", 3);
                             continuar = false;
-                             
+
                         }
                     } catch (Exception ex) {
                         Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
@@ -517,7 +509,7 @@ public class x32Panel extends javax.swing.JInternalFrame{
                             Software.instalarTiempo("cmd /C start /wait 32/4.-Codec_Pack.exe /S", 1);
                             Thread.sleep(3 * tiempo);
                             continuar = false;
-         
+
                         }
                     } catch (Exception ex) {
                         Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
@@ -620,8 +612,6 @@ public class x32Panel extends javax.swing.JInternalFrame{
 
             }
 
-            
-
             do {
 
                 try {
@@ -629,28 +619,24 @@ public class x32Panel extends javax.swing.JInternalFrame{
                     continuar = true;
                     if (Buscador.isProcessRunning("5.-WinrarX32.exe") || Buscador.isProcessRunning("3.-VLC32.exe") || Buscador.isProcessRunning("2.-Chrome32.exe") || Buscador.isProcessRunning("4.-Codec_Pack.exe") || Buscador.isProcessRunning("6.-Adobe.exe") || Buscador.isProcessRunning("7.-Avast.exe") || Buscador.isProcessRunning("Restore_Windows_Photo_Viewer.reg") || Buscador.isProcessRunning("9.-Nitrox32.exe") || Buscador.isProcessRunning("8.-FireFoxX32.exe")) {
                     } else {
-                        
-                        JOptionPane.showMessageDialog(null,new JLabel("INSTALACIÓN TERMINADA", JLabel.CENTER), null, JOptionPane.PLAIN_MESSAGE);
+
+                        JOptionPane.showMessageDialog(null, new JLabel("INSTALACIÓN TERMINADA", JLabel.CENTER), null, JOptionPane.PLAIN_MESSAGE);
                         activarDesactivarChecks(true);
                         continuar = false;
-                        
-                        
-                        
+
                     }
                 } catch (Exception ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
             } while (continuar);
-                        detenerInstalacionx64Botton.setVisible(false);
-                        Instalarx32Botton.setVisible(true);
-                       
+            detenerInstalacionx64Botton.setVisible(false);
+            Instalarx32Botton.setVisible(true);
 
-            
         }
 
     }
 
-    public void activarDesactivarChecks(boolean respuesta){
+    public void activarDesactivarChecks(boolean respuesta) {
         chromex32CheckBox.setEnabled(respuesta);
         VLCx32CheckBox.setEnabled(respuesta);
         winrarx32CheckBox.setEnabled(respuesta);
@@ -661,22 +647,23 @@ public class x32Panel extends javax.swing.JInternalFrame{
         nitrox32CheckBox.setEnabled(respuesta);
         fireFoxx32CheckBox.setEnabled(respuesta);
         allChecksCheckBox.setEnabled(respuesta);
-        
-  }   
-  
-  public boolean cerrarPrograma(boolean resultado){
-int result = JOptionPane.showConfirmDialog(null,"Esta acción cerrara el programa ¿Desea continuar? ", "",
-               JOptionPane.YES_NO_OPTION,
-               JOptionPane.QUESTION_MESSAGE);
-            if(result == JOptionPane.YES_OPTION){
+
+    }
+
+    public boolean cerrarPrograma(boolean resultado) {
+        int result = JOptionPane.showConfirmDialog(null, "Esta acción cerrara el programa ¿Desea continuar? ", "",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE);
+        if (result == JOptionPane.YES_OPTION) {
             System.exit(0);
-            resultado=true;
-            }
-            else resultado=false;
+            resultado = true;
+        } else {
+            resultado = false;
+        }
         return resultado;
 
     }
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Instalarx32Botton;
     private javax.swing.JCheckBox VLCx32CheckBox;
@@ -703,13 +690,3 @@ int result = JOptionPane.showConfirmDialog(null,"Esta acción cerrara el program
     private javax.swing.JLabel winrarx32Ico;
     // End of variables declaration//GEN-END:variables
 }
-
-
-
-
-
-
-
-
-
-

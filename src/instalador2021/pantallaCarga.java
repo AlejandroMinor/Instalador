@@ -17,49 +17,42 @@ import javax.swing.UIManager;
  * @author Alejandro
  */
 public class pantallaCarga extends javax.swing.JFrame {
+
     Timer t;
     ActionListener al;
+
     /**
      * Creates new form pantallaCarga
      */
     public pantallaCarga() {
-                        
-       
-        al = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                jProgressBar1.setString("Cargando "+jProgressBar1.getValue()+"%");
 
-                
-                if (jProgressBar1.getValue()<=100){
-                jProgressBar1.setValue(jProgressBar1.getValue()+10);
-                jProgressBar1.setString("Cargando "+jProgressBar1.getValue()+"%");
+        al = (ActionEvent e) -> {
+            jProgressBar1.setString("Cargando " + jProgressBar1.getValue() + "%");
+            
+            if (jProgressBar1.getValue() <= 100) {
+                jProgressBar1.setValue(jProgressBar1.getValue() + 10);
+                jProgressBar1.setString("Cargando " + jProgressBar1.getValue() + "%");
                 humanCharge.repaint();
-                }
-                else {
-                t.stop(); 
-                }
-                if (jProgressBar1.getValue()>=100){
+            } else {
+                t.stop();
+            }
+            if (jProgressBar1.getValue() >= 100) {
                 aux();
                 
                 jProgressBar1.setValue(0);
-                }
-                
             }
         };
         t = new Timer(1000, al);
         initComponents();
         setIconImage(new ImageIcon(getClass().getResource("/img/iconoPC.png")).getImage());
-        setBackground(new Color(0,0,0,0));
-        jProgressBar1.setBackground(new Color(45,67,166));
-        jProgressBar1.setForeground(new Color(24,42,126));
+        setBackground(new Color(0, 0, 0, 0));
+        jProgressBar1.setBackground(new Color(45, 67, 166));
+        jProgressBar1.setForeground(new Color(24, 42, 126));
         UIManager.put("jProgressBar1.selectionForeground", Color.WHITE);
-        jProgressBar1.setString("Cargando "+jProgressBar1.getValue()+"%");
+        jProgressBar1.setString("Cargando " + jProgressBar1.getValue() + "%");
 
         t.start();
-        
 
-        
     }
 
     /**
@@ -102,7 +95,7 @@ public class pantallaCarga extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-  
+
     }//GEN-LAST:event_formWindowActivated
 
     /**
@@ -139,10 +132,10 @@ public class pantallaCarga extends javax.swing.JFrame {
             }
         });
     }
-    
-    public void aux(){
-    this.dispose();
-   
+
+    public void aux() {
+        this.dispose();
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -18,62 +18,55 @@ import java.util.logging.Logger;
  * @author Alejandro
  */
 public class principal extends javax.swing.JFrame {
-        int comandoUsado=1;
-        cambioColor icono = new cambioColor();
-        x64Panel eventx64 = new x64Panel();
-        officePanel eventOffice = new officePanel();
-        activadoresPanel eventActivadores = new activadoresPanel();
-        herramientasPanel eventHerramientas = new herramientasPanel();
-        x32Panel eventx32 = new x32Panel();
-        
-        
+
+    int comandoUsado = 1;
+    cambioColor icono = new cambioColor();
+    x64Panel eventx64 = new x64Panel();
+    officePanel eventOffice = new officePanel();
+    activadoresPanel eventActivadores = new activadoresPanel();
+    herramientasPanel eventHerramientas = new herramientasPanel();
+    x32Panel eventx32 = new x32Panel();
 
     /**
      * Creates new form principal
      */
     public principal() {
-        
+
         initComponents();
         setIconImage(new ImageIcon(getClass().getResource("/img/iconoPC.png")).getImage());
         this.setResizable(false);
         contenido.setBackground(new Color(0, 0, 0, 0));
         contenido.setVisible(false);
-        escritorio.setBackground(new Color(0,0,0,0));
+        escritorio.setBackground(new Color(0, 0, 0, 0));
         //barraSuperior.setBackground(new Color(45,67,166, 100));
         //setBackground(new Color(0, 0, 0, 0)); // se necesita undecorated para que funcione
-               
-         if (comandoUsado==1){      
-        obtenerInformacion("Manufacturer=","WMIC baseboard Get /Format:List",datoFabricante);
-        obtenerInformacion("Product=","WMIC baseboard Get /Format:List",datoModelo);
-        obtenerInformacion("Name=Intel","WMIC CPU Get /Format:List",datoProcesador);
-        obtenerInformacion("Name=AMD","WMIC CPU Get /Format:List",datoProcesador);
-        obtenerInformacion("Nombre del sistema operativo:","systeminfo",datoSistemaOperativo);
-        obtenerInformacion("Cantidad total de memoria","systeminfo",datoRam);
-        obtenerInformacion("Tipo de sistema:","systeminfo",datoArquitectura);
-        comandoUsado=0;
+
+        if (comandoUsado == 1) {
+            obtenerInformacion("Manufacturer=", "WMIC baseboard Get /Format:List", datoFabricante);
+            obtenerInformacion("Product=", "WMIC baseboard Get /Format:List", datoModelo);
+            obtenerInformacion("Name=Intel", "WMIC CPU Get /Format:List", datoProcesador);
+            obtenerInformacion("Name=AMD", "WMIC CPU Get /Format:List", datoProcesador);
+            obtenerInformacion("Nombre del sistema operativo:", "systeminfo", datoSistemaOperativo);
+            obtenerInformacion("Cantidad total de memoria", "systeminfo", datoRam);
+            obtenerInformacion("Tipo de sistema:", "systeminfo", datoArquitectura);
+            comandoUsado = 0;
         }
-        
+
         escritorio.add(eventx64);
         eventx64.setVisible(false);
-        
+
         escritorio.add(eventOffice);
         eventOffice.setVisible(false);
-        
+
         escritorio.add(eventActivadores);
         eventActivadores.setVisible(false);
-        
+
         escritorio.add(eventHerramientas);
         eventHerramientas.setVisible(false);
-        
+
         escritorio.add(eventx32);
         eventx32.setVisible(false);
-         
-         
 
- 
-        
-        
-        
     }
 
     /**
@@ -361,14 +354,14 @@ public class principal extends javax.swing.JFrame {
         contenido.setVisible(true);
         humanDeskIcon.setVisible(false);
         escritorio.setVisible(true);
-        
+
         eventx64.setVisible(true);
         eventOffice.setVisible(false);
         eventActivadores.setVisible(false);
         eventHerramientas.setVisible(false);
         eventx32.setVisible(false);
-        
-  
+
+
     }//GEN-LAST:event_x64ButtonMouseClicked
 
     private void OfficeButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OfficeButtonMouseClicked
@@ -381,7 +374,7 @@ public class principal extends javax.swing.JFrame {
         contenido.setVisible(true);
         humanDeskIcon.setVisible(false);
         escritorio.setVisible(true);
-        
+
         eventx64.setVisible(false);
         eventOffice.setVisible(true);
         eventActivadores.setVisible(false);
@@ -389,11 +382,6 @@ public class principal extends javax.swing.JFrame {
         eventx32.setVisible(false);
 
 
-        
-    
-        
-        
-        
     }//GEN-LAST:event_OfficeButtonMouseClicked
 
     private void ActivadoresButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ActivadoresButtonMouseClicked
@@ -405,7 +393,7 @@ public class principal extends javax.swing.JFrame {
         contenido.setVisible(true);
         humanDeskIcon.setVisible(false);
         escritorio.setVisible(true);
-        
+
         eventx64.setVisible(false);
         eventOffice.setVisible(false);
         eventActivadores.setVisible(true);
@@ -422,7 +410,7 @@ public class principal extends javax.swing.JFrame {
         contenido.setVisible(true);
         humanDeskIcon.setVisible(false);
         escritorio.setVisible(true);
-        
+
         eventx64.setVisible(false);
         eventOffice.setVisible(false);
         eventActivadores.setVisible(false);
@@ -439,7 +427,7 @@ public class principal extends javax.swing.JFrame {
         contenido.setVisible(true);
         humanDeskIcon.setVisible(false);
         escritorio.setVisible(true);
-        
+
         eventx64.setVisible(false);
         eventOffice.setVisible(false);
         eventActivadores.setVisible(false);
@@ -497,17 +485,16 @@ public class principal extends javax.swing.JFrame {
         icono.RegresarColorIcono(x86Button);
         humanDeskIcon.setVisible(true);
         reiniciarPrograma();
-        
 
-        
+
     }//GEN-LAST:event_logoBottonMouseClicked
 
     private void logoBottonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoBottonMouseEntered
-        this.setCursor(new Cursor(HAND_CURSOR)); 
+        this.setCursor(new Cursor(HAND_CURSOR));
     }//GEN-LAST:event_logoBottonMouseEntered
 
     private void logoBottonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoBottonMouseExited
-    this.setCursor(new Cursor(DEFAULT_CURSOR));
+        this.setCursor(new Cursor(DEFAULT_CURSOR));
     }//GEN-LAST:event_logoBottonMouseExited
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
@@ -521,8 +508,8 @@ public class principal extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-     public static void main(String args[]) {
-        
+    public static void main(String args[]) {
+
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -552,29 +539,25 @@ public class principal extends javax.swing.JFrame {
                 new principal().setVisible(true);
             }
         });
-        
-    }
-    
-    
 
-    
-    public void reiniciarPrograma(){
+    }
+
+    public void reiniciarPrograma() {
         this.dispose();
         String[] arguments = new String[]{};
         main.main(arguments);
     }
 
-    
-    public void obtenerInformacion(String palabra, String comando, JLabel texto){
-            
+    public void obtenerInformacion(String palabra, String comando, JLabel texto) {
+
         try {
             Procesos Buscador = new Procesos();
             String dato = Buscador.consoleInfo(palabra, comando);
-            texto.setText(texto.getText()+dato);
+            texto.setText(texto.getText() + dato);
         } catch (IOException ex) {
             Logger.getLogger(principal.class.getName()).log(Level.SEVERE, null, ex);
         }
-    
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -599,6 +582,5 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JLabel x64Button;
     private javax.swing.JLabel x86Button;
     // End of variables declaration//GEN-END:variables
-
 
 }
